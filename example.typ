@@ -3,7 +3,7 @@
 
 #show: make-glossary
 #show: template.with(
-  title: "Development of a LLM-Based Pet Entertainment System",
+  title: "Development of an LLM-Based Pet Entertainment System",
   article-kind: "Bachelorarbeit",
   author: (
     name: "Max Mustermann",
@@ -13,8 +13,7 @@
   company: (
     name: "Example Corporation",
     city: "91719 Heidenheim",
-    // logo: image("company-logo.png"),
-    logo: rect[Example Corporation Logo],
+    logo: image("company-logo.png"),
     supervisor: "Erika Mustermann",
   ),
   dhbw: (
