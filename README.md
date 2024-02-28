@@ -7,8 +7,8 @@ While I am no longer a student at the DHBW, I do accept pull requests and I inte
 ## Setup
 This template requires you to separately download the DHBW Logo.
 
-You can download it from <https://upload.wikimedia.org/wikipedia/de/1/1d/DHBW-Logo.svg> and save it in the same directory the `template.typ` is in as `dhbw-logo.svg`.
-You may run the following command in said directory to that:
+You can download it from <https://upload.wikimedia.org/wikipedia/de/1/1d/DHBW-Logo.svg> and save it in the same directory the `template.typ` is stored in as `dhbw-logo.svg`.
+You may run the following command in said directory to do that:
 ```sh
 curl https://upload.wikimedia.org/wikipedia/de/1/1d/DHBW-Logo.svg -o dhbw-logo.svg
 ```
