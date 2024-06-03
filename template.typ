@@ -23,11 +23,12 @@
   handling-period: none,
   restriction-note: false,
   language: "de",
-  abstract: none,
+  abstract-en: none,
+  abstract-de: none,
   acronyms: none,
   body
 ) = {
-  let translations = (
+  let all_translations = (
     "de": (
       "abstract": "Zusammenfassung",
       "acronyms": "Abkürzungen",
@@ -36,7 +37,8 @@
       "abstract": "Abstract",
       "acronyms": "Acronyms",
     )
-  ).at(language)
+  )
+  let translations = all_translations.at(language)
 
   set document(title: title, author: author.name)
   set page(
@@ -139,9 +141,14 @@
 
   pagebreak(weak: true)
 
-  if abstract != none {
-    heading(outlined: false, translations.abstract)
-    abstract
+  if abstract-en != none {
+    heading(outlined: false, all_translations.at("en").abstract)
+    abstract-en
+  }
+
+  if abstract-de != none {
+    heading(outlined: false, all_translations.at("de").abstract)
+    abstract-de
   }
 
   if acronyms != none {
