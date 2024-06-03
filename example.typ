@@ -17,6 +17,7 @@
     supervisor: "Erika Mustermann",
   ),
   dhbw: (
+    location: "Ravensburg",
     reviewer: "Dr. Egon Mustermann",
   ),
   signature: (

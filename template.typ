@@ -70,7 +70,7 @@
         #article-kind \
         #v(1cm)
         des Studienganges #author.major \
-        an der Dualen Hochschule Baden-Württemberg Ravensburg \
+        an der Dualen Hochschule Baden-Württemberg #dhbw.location \
         #v(1cm)
         von \
         #author.name \
