@@ -32,10 +32,16 @@
     "de": (
       "abstract": "Zusammenfassung",
       "acronyms": "Abkürzungen",
+      "figures": "Abbildungsverzeichnis",
+      "tables": "Tabellenverzeichnis",
+      "code-snippets": "Codeverzeichnis"
     ),
     "en": (
       "abstract": "Abstract",
       "acronyms": "Acronyms",
+      "figures": "List of Figures",
+      "tables": "List of Tables",
+      "code-snippets": "List of Code Snippets",
     )
   )
   let translations = all_translations.at(language)
@@ -98,6 +104,8 @@
     justify: true,
   )
   show par: set block(spacing: 1.2em)
+  show figure.where(kind: table): set figure.caption(position: top)
+  show figure.where(kind: raw): set figure.caption(position: top)
 
   let signature = [
     #block(
@@ -151,6 +159,12 @@
     abstract-de
   }
 
+  pagebreak(weak: true)
+  
+  outline(indent: true)
+
+  pagebreak(weak: true)
+
   if acronyms != none {
     heading(outlined: false, translations.acronyms)
     acronyms
@@ -158,7 +172,15 @@
 
   pagebreak(weak: true)
 
-  outline(indent: true)
+  outline(title: translations.figures, target: figure.where(kind: image))
+
+  pagebreak(weak: true)
+
+  outline(title: translations.tables, target: figure.where(kind: table))
+
+  pagebreak(weak: true)
+
+  outline(title: translations.code-snippets, target: figure.where(kind: raw))
 
   counter(page).update(0)
   set page(
