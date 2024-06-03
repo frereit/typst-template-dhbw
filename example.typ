@@ -9,6 +9,7 @@
     name: "Max Mustermann",
     matriculation-number: "1208964",
     major: "TIX20",
+    course: "TIX20",
   ),
   company: (
     name: "Example Corporation",
