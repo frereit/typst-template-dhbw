@@ -131,7 +131,7 @@
     #heading(outlined: false)[Sperrvermerk]
     gemäß Ziffer 1.1.13 der Anlage 1 zu §§ 3, 4 und 5 der Studien- und Prüfungsordnung für die Bachelorstudiengänge im Studienbereich Technik der Dualen Hochschule Baden-Württemberg vom 29.09.2017.
 
-    "Der Inhalt dieser Arbeit darf weder als Ganzes noch in Auszügen Personen außerhalb des Prüfungsprozesses und des Evaluationsverfahren zugänglich gemacht werden, sofern keine anders lautende Genehmigung vom Dualen Partner vorliegt."
+    Der Inhalt dieser Arbeit darf weder als Ganzes noch in Auszügen Personen außerhalb des Prüfungsprozesses und des Evaluationsverfahren zugänglich gemacht werden, sofern keine anders lautende Genehmigung vom Dualen Partner vorliegt.
 
     #signature
   ]
